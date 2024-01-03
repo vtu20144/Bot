@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://cdn.botpress.cloud/webchat/v1/inject.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1 class="main-heading">AgriSite</h1>
+                <p class="paragraph">Agriculture is the backbone of the livelihood security system of nearly 700 million people in the country.<br />Farmers can get solutions for their query by an AI.</p>
+                <button class="button" onclick="display('sectionFavouritePlaces')">Get Started</button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Seasons & Famous crops</h1>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Winter Season</h1>
+                    <p class="favourite-place-card-description">
+                        There isn’t much to do in the fields in the winter, so farmers use these months to review their
+                        yield maps and management practices to decide how they should proceed the next year.
+                    </p>
+                </div>
+                <img src="https://www.iceandsnowsystems.co.uk/wp-content/uploads/2020/03/Agriculture.jpg" class="favourite-place-card-image" />
+            </div>
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Summer Season</h1>
+                    <p class="favourite-place-card-description">
+                        Once the soil is prepared, farmers can begin planting crops like corn, beans, squash, and melons. Throughout the summer, farmers need to keep a close eye on their crops.
+                        They monitor for weed control, fertilizer needs, irrigation schedules, and pest management.
+                    </p>
+                </div>
+                <img src="https://www.spring-nutrition.org/sites/default/files/stories/images/img_0774.jpg" class="favourite-place-card-image" />
+            </div>
+
+            <button class="btn btn-dark" onclick="display('sectionHome')">back</button>
+        </div>
+    </div>
+    <div id="sectionTajMahalDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Winter Season</h1>
+            <div class="detailed-view-card-container">
+                <div id="carouselExampleIndicators1" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://images.pexels.com/photos/158603/wheat-wheat-field-cereals-field-158603.jpeg?cs=srgb&dl=background-blur-bread-158603.jpg&fm=jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://domf5oio6qrcr.cloudfront.net/medialibrary/6159/ff717f2b-8a5b-4862-a65f-25b59e3f57b8.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://www.abestfashion.com/wp-content/uploads/2019/12/Mustard-Seeds-2.1.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators1" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators1" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading text-center">Winter Agriculture</h1>
+                    <p class="detailed-view-card-description">
+                        Winter crops in India, also known as Rabi crops, are cultivated during the winter season, which typically spans from October to March. These crops play a crucial role in sustaining the agricultural productivity of the country. The Rabi season
+                        is the second cropping season in India, following the Kharif season, which occurs during the monsoon.
+                        <br />
+                        Winter crops are vital for ensuring food security, stabilizing prices, and sustaining the agricultural economy in India. The success of Rabi crops depends
+                        on various factors, including timely sowing, adequate irrigation, and favorable weather conditions.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <div id="sectionGoldenTempleDetailedView">
+        <div class="detailed-view-bg-container">
+            <h1 class="detailed-view-heading">Summer Season</h1>
+            <div class="detailed-view-card-container">
+                <div id="goldenTempleCarousel" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#goldenTempleCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="1"></li>
+                        <li data-target="#goldenTempleCarousel" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://downloadhdwallpapers.in/wp-content/uploads/2017/12/Paddy-2560x1600.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://cdn.cdnparenting.com/articles/2019/02/20180445/278569178-H-1024x700.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                        <div class="carousel-item">
+                            <img src="http://egyptianstreets.com/wp-content/uploads/2017/08/Cotton.jpg" class="d-block w-100" alt="..." />
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#goldenTempleCarousel" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#goldenTempleCarousel" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+                <div class="detailed-view-card-text-container">
+                    <h1 class="detailed-view-card-heading text-center">Summer Agriculture</h1>
+                    <p class="detailed-view-card-description">
+                        Summer crops in India, also known as Kharif crops, are cultivated during the summer or monsoon season, which typically spans from June to September. These crops are dependent on the southwest
+                        monsoon, and their cultivation is essential for sustaining the agricultural economy in the country.
+                        <br />
+                        Successful cultivation of Kharif crops is contingent upon the timely arrival and distribution of monsoon rains. Adequate water management, soil fertility, and pest control are essential factors contributing
+                        to the productivity of these crops. The diversity of Kharif crops helps ensure food security and economic stability in India.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')">
+                back
+            </button>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+    <script>
+        window.embeddedChatbotConfig = {
+            chatbotId: "ALFnd0xs2lZOY_G0oztjx",
+            domain: "www.chatbase.co"
+        }
+    </script>
+    <!-- <script src="https://www.chatbase.co/embed.min.js" chatbotId="ALFnd0xs2lZOY_G0oztjx" domain="www.chatbase.co" defer>
+    </script> -->
+</body>
+
+</html>
